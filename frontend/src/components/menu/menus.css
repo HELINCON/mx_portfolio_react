@@ -4,11 +4,16 @@
     border-radius: 50%;
     overflow: hidden;
     margin-top: 10px;
+    transform: translateX(-10px);   /* NOW the circle will actually move left */
 }
-
 .navebar-profile-pic img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center 10px;  /* move image DOWN inside circle */
+    border-radius: 50%;
+    object-position: center 1px;   /* move image DOWN */
 }
+
+
+
+
