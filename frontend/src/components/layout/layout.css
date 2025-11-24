@@ -6,7 +6,7 @@
 .sidebar {
     height: 100vh;
     background-color: #8ca6a9;
-    width: 90px;
+    width: 70px;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,10 +23,12 @@
     display: flex;
     justify-content: right;
     cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .sidebar-toggle-icons p svg {
-    background-color: #f29f67;
+    background-color: #474441;
     color: white;
     margin-top: 30px;
 }
@@ -40,3 +42,7 @@
 .sidebar-toggle ~ .container {
     margin-left: 190px;
 }
+
+
+
+
