@@ -1,26 +1,42 @@
-.sidebar-section{
+.sidebar-section {
     display: flex;
 }
 
-.sidebar{
+/* Make sidebar fixed and prevent overflow */
+.sidebar {
     height: 100vh;
-    background-color: #1e1e2c;
+    background-color: #8ca6a9;
     width: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;   /* prevents menu boxes from escaping downward */
 }
 
-.sidebar-toggle{
-    width: 230px;
+/* Expanded sidebar */
+.sidebar-toggle {
+    width: 190px;
 }
 
-.sidebar-toggle-icons{
+/* Toggle button container */
+.sidebar-toggle-icons {
     display: flex;
-    align-items: right;
     justify-content: right;
     cursor: pointer;
 }
 
-.sidebar-toggle-icons p svg{
-background-color: #f29f67;
-color: white;
-margin-top: 30px;
+.sidebar-toggle-icons p svg {
+    background-color: #f29f67;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Push main page content to the right of the fixed sidebar */
+.container {
+    margin-left: 90px;
+}
+
+/* When expanded */
+.sidebar-toggle ~ .container {
+    margin-left: 190px;
 }

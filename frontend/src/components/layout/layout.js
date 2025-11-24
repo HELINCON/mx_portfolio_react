@@ -21,7 +21,7 @@ const Layout = () => {
                     <div className="sidebar-toggle-icons">
                         <p onClick={handleToggle}>
                             {
-                                toggle ? (<AiOutlineDoubleLeft size={30} />) : (<AiOutlineDoubleRight size={30} />)
+                                toggle ? (<AiOutlineDoubleLeft size={24} />) : (<AiOutlineDoubleRight size={30} />)
                             }
                         </p>
                     </div>

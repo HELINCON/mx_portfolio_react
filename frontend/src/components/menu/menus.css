@@ -3,17 +3,61 @@
     width: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: 10px;
-    transform: translateX(-10px);   /* NOW the circle will actually move left */
+
+    margin: -69px auto 20px auto;  
+    /* ↑ moves the circle UP 
+       -70px = move up
+        20px  = small spacing below circle before boxes */
 }
+
 .navebar-profile-pic img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    object-position: center 1px;   /* move image DOWN */
+    object-position: center 2px;
 }
 
 
 
+/* -------- MENU WRAPPER -------- */
+.nav-items {
+    margin-top: 2px;   /* boxes appear right after the profile pic */
+}
 
+
+.menu-box {
+    background: #d9d9d9;  /* natural grey pebble tone */
+    border-radius: 14px;  /* same value you used earlier */
+    box-shadow:
+        inset 1px 1px 2px rgba(255,255,255,0.6),
+        inset -1px -1px 2px rgba(0,0,0,0.08),
+        2px 2px 5px rgba(0,0,0,0.15);
+
+    transition: 0.2s ease;
+    margin: 10px 12px;
+}
+
+.menu-box:hover {
+    transform: scale(1.10);  /* zooms in and zooms out  */
+    box-shadow:
+        inset 1px 1px 2px rgba(255,255,255,0.5),
+        inset -1px -1px 2px rgba(0,0,0,0.06),
+        3px 3px 6px rgba(0,0,0,0.18);
+}
+
+
+
+/* .menu-box:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        3px 3px 8px rgba(0,0,0,0.35),
+        -3px -3px 8px rgba(255,255,255,0.5);
+} */
+
+
+
+/* icon alignment */
+.menu-box svg {
+    margin-right: 10px;
+}
