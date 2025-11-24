@@ -22,7 +22,18 @@ const Menus = ({ toggle }) => {
           </div>
         </>
       ) : (
-        <h1>.</h1>
+        <>
+          <div className='nav-items'>
+            <div className='menu-box'><FcHome size={25} /></div>
+            <div className='menu-box'><FcAbout size={25} /></div>
+            <div className='menu-box'><FcBriefcase size={25} /></div>
+            <div className='menu-box'><FcStackOfPhotos size={25} /></div>
+            <div className='menu-box'><HiMiniAcademicCap size={25} /></div>
+            <div className='menu-box'><FcVideoProjector size={25} /></div>
+            <div className='menu-box'><FcHome size={25} /></div>
+            <div className='menu-box'><FcBusinessContact size={25} /></div>
+          </div>
+        </>
       )}
 
     </>
