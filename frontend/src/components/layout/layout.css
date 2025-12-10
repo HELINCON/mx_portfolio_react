@@ -5,7 +5,7 @@
 /* Make sidebar fixed and prevent overflow */
 .sidebar {
     height: 100vh;
-    background-color: #8ca6a9;
+    background-color: #0b011cb1;
     width: 70px;
     position: fixed;
     top: 0;
